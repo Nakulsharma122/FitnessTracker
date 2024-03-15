@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel = "stylesheet" href = "../css/default.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Member Registration</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-container">
+            <a class='logo' href="./index.html"> Gymso Fitness</a>
+            <nav>
+                <ul class="menu-items">
+                    <li class='nav-item'><a class="active nav-link" href="#home-section">home</a></li>
+                    <li class='nav-item'><a class="nav-link" href="#about-section">about us</a></li>
+                    <li class='nav-item'><a class="nav-link" href="#classes-section">classes</a></li>
+                    <li class='nav-item'><a class="nav-link" href="#schedule-section">schedules</a></li>
+                    <li class='nav-item'><a class="nav-link" href="#contact-section">contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="" class="form-container" method="POST">
+            <fieldset>
+                <input class="input" type="text" placeholder="First Name">
+                <input class="input" type="text" placeholder="Last Name">
+                <input class="input" type="email" placeholder="Email">
+                <input class="input" type="password" placeholder="create password">
+                <input class="input" type="password" placeholder="Confirm password">
+                <div class="checkbox"><input type="checkbox"><span for="check">I accept all terms and conditions</span>
+                </div>
+                <input class="input reg-btn" type="submit" value="Register Now">
+            </fieldset>
+            <div class="login">
+                <p>Already have an account?<a href="./login.html">Login now</a></p>
+            </div>
+        </form>
+    </main>
+    <footer id="about-section">
+        <section>
+            <address title="company address">
+                <h4>Company Address</h4>
+                <p><i class="fa-solid fa-location-dot"></i> 21 Revolution<span> Nigeria, Osun</span></p>
+                <p><i class="fa-solid fa-phone"></i> +2348144580946</p>
+                <a href="mailto:ridwanullahiajayi01@gmail.com"><i class="fa-solid fa-envelope"></i>
+                    support@gmail.com</a>
+            </address>
+
+            <div class="pages-navigation links">
+                <h4>Page Links</h4>
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Testimony</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="social media handles" title="social medial handles">
+            <h4>Follow us</h4>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>
