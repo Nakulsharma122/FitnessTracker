@@ -79,7 +79,7 @@ nav a:hover {
   transition: all 0.1s ease;
 }
 
-.hamburger {
+.burger {
   display: block;
   cursor: pointer;
 }
@@ -92,16 +92,16 @@ nav a:hover {
   margin: 6px auto;
 }
 
-.hamburger.active .bar:nth-child(1) {
+.burger.active .bar:nth-child(1) {
   transform: translateY(12px) rotate(45deg);
   background-color: white;
 }
 
-.hamburger.active .bar:nth-child(2) {
+.burger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(3) {
+.burger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
   background-color: white;
 }
