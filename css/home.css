@@ -131,6 +131,11 @@ div .register-btn {
   height: auto;
   padding: 12px 12px;
 }
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
 .timetable {
   display: flex;
@@ -150,30 +155,35 @@ table {
   height: 90vh;
 }
 
-table caption {
-  color: white;
-}
 
-td,
-th {
-  padding: 10px;
-  font-size: 12px;
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.workout h2{
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
   color: white;
-  font-weight: lighter;
+  padding-top: 10px;
+  font-weight: 100%;
+  margin: 0;
 }
-
-th {
-  background: #f92302;
+table,tr,th{
+  border: 1px solid #f92302b4;
+  background-color: #f92302b4;
+  text-align: center;
+  font-size: 30px;
+  display: center;
+  padding: 5px;
+  table-layout: auto;
+  tab-size: 500px 450px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  float: center;
 }
-
-td {
-  border: 1px solid rgba(128, 128, 128, 0.156);
-}
-
-td span {
-  color: grey;
-  font-size: 9px;
+table,th{
+  background-color: #f92302b4;
 }
 
 .contact {
@@ -244,6 +254,7 @@ a.slide-left {
 .btn {
   animation-delay: 3s;
 }
+
 
 footer {
   display: flex;
@@ -338,7 +349,7 @@ footer ul {
     border: none;
   }
 
-  .hamburger {
+  .burger {
     display: none;
   }
 
