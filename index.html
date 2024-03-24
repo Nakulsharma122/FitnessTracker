@@ -30,7 +30,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact-section">contact</a>
             </li>
+           
           </ul>
+          <img src="images/icon/moon.png" id="icon1" >
           
         </nav>
       </div>
@@ -260,6 +262,20 @@
       </section>
     </footer>
 
-    <!-- <script src="../js/index.js"></script> -->
+<script>
+    var icon1 = document.getElementById("icon1");
+
+    icon1.onclick = function(){
+      document.body.classList.toggle("dark-theme");
+      if(document.body.classList.contains("dark-theme")){
+        icon1.src = "images/icon/sun.png";
+      }else{
+        icon1.src = "images/icon/moon.png";
+      }
+
+    }
+
+</script>  
+  
   </body>
 </html>

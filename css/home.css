@@ -1,6 +1,6 @@
 
 .welcome {
-  background: url('./../images/gallery/bg.jpg') #17171794;
+  background: url('./../images/gallery/successful-sporty-male-shows-his-big-finger-up.jpg') #aaa9a994;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -12,6 +12,134 @@
   text-align: center;
   justify-content: center;
   gap: 20px;
+}
+:root{
+  --primary-color:#edf2fc;
+  --secondary-color:#212121;
+  
+}
+.dark-theme{
+  --primary-color:#000106;
+  --secondary-color:#fff;
+
+}
+body {
+  max-width: 768px;
+  height: 100vh;
+}
+
+.navbar-container {
+  display: flex;
+  max-width: 100%;
+  height: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2.5% 5%;
+  align-items: center;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.logo {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+nav ul {
+  display: none;
+  flex-direction: row;
+  gap: 2em;
+}
+
+nav a {
+  color: var(--secondary-color);
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-button {
+  cursor: pointer;
+  display: none;
+}
+
+.menu-button:active {
+  border: 1px solid white;
+  padding: 11px 3px;
+  border-radius: 3px;
+}
+
+.menu-show {
+  position: absolute;
+  top: 7%;
+  left: 0;
+  right: 0;
+  display: block;
+  max-width: 100%;
+  background: grey;
+  text-align: center;
+  height: 220px;
+  z-index: 1;
+}
+
+nav li {
+  line-height: 43px;
+  border-bottom: 1px solid white;
+}
+
+.active {
+  color: #b32d19;
+}
+
+nav a:hover {
+  color: #b32d19;
+  transition: all 0.1s ease;
+}
+
+
+.bar {
+  display: block;
+  width: 27px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  margin: 6px auto;
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 100%;
+    position: relative;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    border: none;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+#icon1{
+  width: 30px;
+  cursor: pointer;
+}
+nav ul{
+  flex: 1;
+  text-align: right;
 }
 
 .summary {
@@ -47,7 +175,7 @@
   align-items: center;
   padding: 0.8em 1.5em;
   font-weight: 400;
-  color: white;
+  color: var(--secondary-color);
   background-color: #f92302;
   border: 1px solid #f92302;
   opacity: 0;
@@ -55,7 +183,7 @@
 
 .learn-more .btn:hover {
   background-color: #b32d19;
-  color: white;
+  color: var(--secondary-color);
   transition: all 0.5s ease;
 }
 
@@ -64,7 +192,7 @@
 }
 
 .schedule {
-  background: #17181a;
+  background: var(--primary-color);
   height: 400px;
   padding: 50px 0;
   display: flex;
@@ -78,13 +206,13 @@
   align-items: center;
   text-align: center;
   gap: 12px;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .schedule p {
   font-size: 14px;
   font-weight: lighter;
-  color: rgba(255, 255, 255, 0.881);
+  color: var(--secondary-color);
 }
 
 .schedule time {
@@ -99,7 +227,7 @@ div .register-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--secondary-color);
   font-weight: lighter;
   background-color: #f92302;
   border: 1px solid  #f92302;
@@ -115,7 +243,7 @@ div .register-btn {
 }
 
 .classes {
-  background: #f9f9f9;
+  background: var(--primary-color);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -125,6 +253,8 @@ div .register-btn {
 }
 .classes h3{
   font-size: 27px;
+  color: var(--secondary-color);
+
 }
 .classes img {
   max-width: 100%;
@@ -147,7 +277,7 @@ div .register-btn {
   flex-direction: column;
   border-collapse: collapse;
   overflow-x: auto;
-  background-color: black;
+  background-color: var(--primary-color);
 }
 
 table {
@@ -164,7 +294,7 @@ body{
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 50px;
-  color: white;
+  color: var(--secondary-color);
   padding-top: 10px;
   font-weight: 100%;
   margin: 0;
@@ -179,12 +309,13 @@ table,tr,th{
   table-layout: auto;
   tab-size: 500px 450px;
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  color: white;
   float: center;
 }
 table,th{
   background-color: #f92302b4;
 }
+
 
 .contact {
   display: flex;
@@ -193,6 +324,19 @@ table,th{
   text-align: center;
   margin: 24px auto;
 }
+ main{
+  background-color: var(--primary-color);
+}
+main h3{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+} 
+
+main .margin{
+  background-color: var(--primary-color);
+  color: var(--secondary-color); 
+}
+
 
 form {
   display: flex;
@@ -213,20 +357,20 @@ form input:focus {
 }
 
 form .btn {
-  background: rgba(0, 0, 0, 0.827);
+  background:  var(--secondary-color);
   padding: 8px;
-  color: white;
+  color: var(--primary-color);
   text-align: center;
   border: 1px solid  rgba(0, 0, 0, 0.787);
   border-radius: 6px;
 }
 
 form .btn:hover {
-  background: rgba(0, 0, 0, 0.787);
+  background: red;
 }
 
 form .btn:active {
-  background: black;
+  background: var(--primary-color);
 }
 
 .map {
@@ -259,11 +403,11 @@ a.slide-left {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: var(--primary-color);
   padding-top:30px;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: var(--secondary-color);
   gap: 20px;
 }
 
@@ -284,7 +428,7 @@ footer p,
 footer a {
   font-size: 14px;
   line-height: 30px;
-  color: rgba(255, 255, 255, 0.616);
+  color: var(--secondary-color);
 }
 
 footer ul {
@@ -299,7 +443,7 @@ footer ul {
 }
 
 .social {
-  border-top: 1px solid grey;
+  border-top: 1px solid black;
   display: flex;
   padding:20px 0;
   flex-direction: column;
@@ -314,7 +458,7 @@ footer ul {
 }
 
 .social i {
-  color: white;
+  color: var(--secondary-color);
   font-size:25px;
 }
 
