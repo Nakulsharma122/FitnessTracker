@@ -1,0 +1,85 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: rgb(53, 99, 99);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 50px;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+}
+
+
+    .main_container{
+        display: grid;
+        gap: 1.5rem;
+       
+        grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+        justify-content: center;
+    }
+      
+
+
+.box_container{
+    display: flex;
+    flex-direction: column;
+    border: 2.5px solid black;
+    border-radius: 2px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.image_container{
+    position: relative;
+    overflow: hidden;
+    height: 20rem;
+}
+
+.card_image {
+    object-fit: contain;
+    object-position: center;
+    position: scale-down;
+    height: 100%;
+    width: 100%;
+}
+
+.title_container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    }
+
+.features {
+list-style-type: none;
+padding: 0;
+   
+}
+
+body{
+    background-color:rgb(237, 234, 230)
+}
+
+.box_container:hover {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+#Aboutme {
+    font-size: 1em;
+    /* font-weight:200 ; */
+    /* line-height: 1.8rem; */
+}
+
+#Specialties {
+    font-size: 1em;
+    /* font-weight:200 ; */
+    /* line-height: 1.8rem; */
+}
