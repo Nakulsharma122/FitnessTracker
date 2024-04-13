@@ -62,7 +62,24 @@ app.use((req,res,next)=>{
 
 
 
-app.get("/", async (req,res)=>{
+app.get("/",(req,res)=>{
+   
+  
+    res.render("register");
+
+})
+
+app.post("/SignUp",async(req,res)=>{
+    let {FirstName,LastName,username,password}=req.body;
+    const newUser=new User({FirstName,LastName,username});
+    const registerUser= await User.register(newUser,password);
+    
+    res.redirect("/users/login.html");
+});
+
+app.post('/login',
+passport.authenticate("local",{failureRedirect:'/users/login.html'}), 
+async (req,res)=>{
     let exercise = ["bisceps","triceps","neck","traps","lats","hamstrings","abdominals","abductors","adductors","calves","forearms","glutes","lower_back","middle_back"];
     let randEx = Math.floor(Math.random()*exercise.length);
     try{
@@ -77,36 +94,27 @@ app.get("/", async (req,res)=>{
           };
           const response = await axios.request(options);
           const responseData = response.data;
-          
+         
           res.render('index',{responseData});
-          console.log({responseData});
+         
     }  catch(error){
         console.error(error);
         res.status(500).send('Error fetching data from API');
     }
+        
 });
 
-app.post("/SignUp",async(req,res)=>{
-    let {FirstName,LastName,username,password}=req.body;
-    const newUser=new User({FirstName,LastName,username});
-    const registerUser= await User.register(newUser,password);
-    res.redirect("/users/login.html");
-});
 
-app.post('/login',
-passport.authenticate("local",{failureRedirect:'/users/login.html'}), 
-async (req,res)=>{
-        res.redirect("/");
-});
-
-app.get("/logout",(req,res)=>{
+app.post("/logout",(req,res)=>{
     req.logout((err)=>{
         if(err){
             return next(err);
         }
-        res.redirect("/");
+        res.render("register");
     })
 });
+
+
 
 
 
