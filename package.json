@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "async": "^3.2.5",
     "axios": "^1.6.8",
     "body-parser": "^1.20.2",
     "connect-flash": "^0.1.1",

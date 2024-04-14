@@ -35,14 +35,15 @@
     </header>
     <main>
 
-        <form method="POST" action="/SignUp" class="form-container">
+        <form method="POST" action="/SignUp" class="form-container"  class="needs-validation">
             <fieldset>
-                <input class="input" type="text" placeholder="First Name" name="FirstName">
-                <input class="input" type="text" placeholder="Last Name" name="LastName">
-               
-                <input class="input" type="text" placeholder="Username" name="username">
-                <input class="input" type="password" placeholder="create password" name="password">
-                <button class="input reg-btn" type="submit"> Register Now</button>
+                <input class="input" type="text" placeholder="First Name" name="FirstName" required>
+                <input class="input" type="text" placeholder="Last Name" name="LastName" required>
+                
+                <input class="input" type="text" placeholder="Username" name="LastName" required>
+                
+                <input class="input" type="password" placeholder="create password" name="password" required>
+                <button class="input reg-btn" type="submit" > Register Now</button>
             </fieldset>
         </form>
      
@@ -81,5 +82,6 @@
             </ul>
         </section>
     </footer>
+    <script src="../js/script.js"></script>
 </body>
 </html>

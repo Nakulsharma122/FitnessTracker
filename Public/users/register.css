@@ -37,6 +37,20 @@ fieldset {
   border: 1px solid rgba(128, 128, 128, 0.442);
   border-radius: 6px;
 }
+.username{
+  padding: 10px;
+  width: 670px;
+  border: 1px solid rgba(128, 128, 128, 0.442);
+  border-radius: 6px;
+}
+.valid-feedback, .invalid-feedback {
+  display: none;
+  color: green;
+}
+
+.invalid-feedback {
+  color: red;
+}
 
 .checkbox {
   font-size: 14px;

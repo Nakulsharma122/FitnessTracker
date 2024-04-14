@@ -62,12 +62,7 @@ app.use((req,res,next)=>{
 
 
 
-// app.get("/",(req,res)=>{
-   
-  
-//     res.render("register");
 
-// })
 app.get("/", async (req,res)=>{
     let exercise = ["bisceps","triceps","neck","traps","lats","hamstrings","abdominals","abductors","adductors","calves","forearms","glutes","lower_back","middle_back"];
     let randEx = Math.floor(Math.random()*exercise.length);
@@ -85,7 +80,7 @@ app.get("/", async (req,res)=>{
           const responseData = response.data;
           
           res.render('index',{responseData});
-          //console.log({responseData});
+          
     }  catch(error){
         console.error(error);
         res.status(500).send('Error fetching data from API');
@@ -93,39 +88,12 @@ app.get("/", async (req,res)=>{
 });
 
 app.post("/SignUp",async(req,res)=>{
-    let {FirstName,LastName,username,password}=req.body;
-    const newUser=new User({FirstName,LastName,username});
+    let {FirstName,LastName,username,Email,password}=req.body;
+    const newUser=new User({FirstName,LastName,username,Email});
     const registerUser= await User.register(newUser,password);
-    
     res.redirect("/users/login.html");
 });
 
-// app.post('/login',
-// passport.authenticate("local",{failureRedirect:'/users/login.html'}), 
-// async (req,res)=>{
-//     let exercise = ["bisceps","triceps","neck","traps","lats","hamstrings","abdominals","abductors","adductors","calves","forearms","glutes","lower_back","middle_back"];
-//     let randEx = Math.floor(Math.random()*exercise.length);
-//     try{
-//         const options = {
-//             method: 'GET',
-//   url: 'https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises',
-//   params: {muscle: exercise[randEx]},
-//   headers: {
-//     'X-RapidAPI-Key': 'aa5b334ea3msh5dc8993173b875ap1af323jsn881307737e0c',
-//     'X-RapidAPI-Host': 'exercises-by-api-ninjas.p.rapidapi.com'
-//   }
-//           };
-//           const response = await axios.request(options);
-//           const responseData = response.data;
-         
-//           res.render('index',{responseData});
-         
-//     }  catch(error){
-//         console.error(error);
-//         res.status(500).send('Error fetching data from API');
-//     }
-        
-// });
 
 app.post('/login',
 passport.authenticate("local",{failureRedirect:'/users/login.html'}), 
