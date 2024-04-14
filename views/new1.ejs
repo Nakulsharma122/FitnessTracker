@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thank You Page</title>
+    <style>
+        /* CSS Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+        }
+
+        .thank-you-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            border: 2px solid #90caf9;
+            text-align: center;
+            max-width: 500px;
+        }
+
+        h1 {
+            color: #2196f3;
+            font-size: 26px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Optional: Button for additional interactivity */
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2196f3;
+            color: #ffffff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #1976d2;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum inventore, pariatur reprehenderit nisi quam nostrum repudiandae? Non sunt accusantium vero minus fugit dolore tempora officia saepe, repellat itaque nisi tenetur!</h1>
-    
+    <div class="thank-you-container">
+        <h1>Thank You!</h1>
+        <p>Thank you for your query. Our team will contact you after some time. Have a great day!</p>
+        <!-- Optional: Add a button if needed -->
+        <a href="/" class="button">Learn More</a>
+    </div>
 </body>
+
 </html>
