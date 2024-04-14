@@ -116,15 +116,11 @@ app.get("/logout",(req,res,next)=>{
 
 
 
-app.get("/show",(req,res)=>{
-   
-  
-    res.render("new1.ejs");
 
-})
 app.post("/show",(req,res)=>{
     let {username , content}= req.body;
      console.log(req.body);
+     res.render("new1.ejs");
 });
 
 app.use((err,req,res,next)=>{
