@@ -273,6 +273,7 @@ div .register-btn {
   font-weight: lighter;
   background-color: #f92302;
   border: 1px solid  #f92302;
+  box-shadow: 0 0 10 10px solid gray;
 }
 *{
   margin: 0px;

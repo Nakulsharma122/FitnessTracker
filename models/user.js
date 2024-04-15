@@ -12,7 +12,11 @@ const userSchema = new Schema({
         type:String,
         required:true,
         trim:true
-    }
+    },
+    Email :{
+        type : String,
+        required: true,
+    },
    
 });
 
